@@ -1,0 +1,6 @@
+env
+pycache/.env
+.env
+/pycache/
+/models/
+.gitattributes

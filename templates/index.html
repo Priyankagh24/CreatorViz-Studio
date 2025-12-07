@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataViz AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.23/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.scss') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index_page.css') }}">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav id="tm-nav" class="navbar navbar-expand-lg navbar-dark tm-bg-dark glass-nav shadow-lg fixed top-0 left-0 w-full z-50" style="font-family: 'Poppins', 'Source Sans Pro', sans-serif;">
+        <div class="container mx-auto flex items-center justify-between px-6 py-3">
+            <a class="navbar-brand flex items-center gap-2 text-white text-3xl font-bold tracking-wide" href="{{ url_for('main.index') }}" style="letter-spacing: 2px;">
+                <svg class="inline-block mr-2" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="15" stroke="#99FF66" stroke-width="2" fill="rgba(153,255,102,0.08)"/>
+                    <path d="M10 20L16 12L22 20" stroke="#99FF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                DataViz <span style="color:#99FF66;">AI</span>
+            </a>
+            <button class="navbar-toggler text-white border-white focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse transition-all duration-300 ease-in-out" id="navbarNav">
+                <ul class="navbar-nav ml-auto flex gap-2 md:gap-6 items-center">
+                    <li class="nav-item selected relative group">
+                        <a class="nav-link navbar-link text-lg font-semibold transition-colors duration-200 hover:text-[#99FF66] text-nowrap" href="{{ url_for('main.index') }}" title="Home">
+                            <i class="fas fa-home mr-2"></i>Home
+                        </a>
+                        <span class="circle transition-all duration-300 group-hover:bg-[#99FF66]"></span>
+                    </li>
+                    <li class="nav-item relative group">
+                        <a class="nav-link navbar-link text-lg font-semibold transition-colors duration-200 hover:text-[#99FF66] text-nowrap" href="{{ url_for('main.csv_to_video') }}" title="Transform your data into stunning videos">
+                            <i class="fas fa-chart-line mr-2"></i>Data Magic
+                        </a>
+                        <span class="circle transition-all duration-300 group-hover:bg-[#99FF66]"></span>
+                    </li>
+                    <li class="nav-item relative group">
+                        <a class="nav-link navbar-link text-lg font-semibold transition-colors duration-200 hover:text-[#99FF66] text-nowrap" href="{{ url_for('main.text_to_video') }}" title="Turn your ideas into visual stories">
+                            <i class="fas fa-lightbulb mr-2"></i>Story Lab
+                        </a>
+                        <span class="circle transition-all duration-300 group-hover:bg-[#99FF66]"></span>
+                    </li>
+                    <li class="nav-item relative group">
+                        <a class="nav-link navbar-link text-lg font-semibold transition-colors duration-200 hover:text-[#99FF66] text-nowrap" href="{{ url_for('main.multi_model_template') }}" title="Create professional-grade visual content">
+                            <i class="fas fa-crown mr-2"></i>Pro Studio
+                        </a>
+                        <span class="circle transition-all duration-300 group-hover:bg-[#99FF66]"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="site-title mt-24">
+        <a href="{{ url_for('main.index') }}"> <h1 class="title">DataViz AI</h1></a>
+        <p class="subtitle">Dynamic Infographic Generator</p>
+        <div class="title-glow"></div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card" data-id="1" onclick="window.location.href='{{ url_for('main.text_to_video') }}'">
+            <div class="card-glow"></div>
+            <div class="card-content">
+                <i class="card-icon fas fa-wand-magic-sparkles fa-bounce"></i>
+                <h3 class="card-title">Story Lab</h3>
+                <p class="card-description">Turn text into dynamic video stories</p>
+            </div>
+            <div class="card-overlay">
+                <div class="card-overlay-content">
+                    <p>Start creating your story...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-id="2" onclick="window.location.href='{{ url_for('main.multi_model_template') }}'">
+            <div class="card-glow"></div>
+            <div class="card-content">
+                <i class="card-icon fas fa-photo-film fa-beat-fade"></i>
+                <h3 class="card-title">Pro Studio</h3>
+                <p class="card-description">Pro-grade visuals in minutes</p>
+            </div>
+            <div class="card-overlay">
+                <div class="card-overlay-content">
+                    <p>Enter the studio...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-id="3" onclick="window.location.href='{{ url_for('main.csv_to_video') }}'">
+            <div class="card-glow"></div>
+            <div class="card-content">
+                <i class="card-icon fas fa-chart-line fa-fade"></i>
+                <h3 class="card-title">Data Magic</h3>
+                <p class="card-description">Data-driven stories that inspire</p>
+            </div>
+            <div class="card-overlay">
+                <div class="card-overlay-content">
+                    <P>Click to begin processing your data...</P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="video-container">
+            <div class="video-placeholder">
+                <div class="play-button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    <div class="play-button-ping">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="opacity: 0.3">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="video-overlay"></div>
+            <div class="video-text">
+                <h3 class="video-title">Watch Tutorial</h3>
+                <p class="video-description">Learn how to create stunning infographics in minutes</p>
+            </div>
+            <br>
+        </div>
+    </div>
+ 
+</body>
+<script src="{{ url_for('static', filename='js/index_page.js') }}"></script> 
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script> 
+<script src="{{ url_for('static', filename='js/jquery-3.5.1.min.js') }}"></script> 
+<script src="{{ url_for('static', filename='js/templatemo-script.js') }}"></script> 
+<script src="{{ url_for('static', filename='js/slick.js') }}"></script> 
+</html>
