@@ -1,0 +1,140 @@
+# Query: D:\\
+# ContextLines: 1
+
+35 results - 17 files
+
+app\csv_to_video_helper_function.py:
+  462  # if __name__ == "__main__":
+  463: #     file_path = 'D:\\1OOx-enginners-hackathon-submission-2\\data\\2015.csv'
+  464  #     process_data_and_create_video(file_path)
+
+app\multi_model_utility.py:
+  777  # # Example usage:
+  778: # file_path = 'D:\\1OOx-enginners-hackathon-submission-2\\data\\main_data.csv'
+  779  # prompt = "number of accomodations average what would be in cool video"
+  780: # audio_file = "D:\\1OOx-enginners-hackathon-submission-2\\uploads\\audio_files"
+  781: # title_image = "D:\\1OOx-enginners-hackathon-submission-2\\outputs"
+  782  
+
+app\pretrained_model.py:
+  48  # # Set the TRANSFORMERS_CACHE environment variable
+  49: os.environ['HF_HOME'] = os.path.join(BASE_DIR, "cache")
+  50  
+
+app\routes.py:
+  132  
+  133: # UPLOADS_FOLDER = 'D:\\1OOx-enginners-hackathon-submission-2\\uploads\\videos'
+  134  
+
+app\utils.py:
+  52  # Set the HF_HOME environment variable to change the cache path
+  53: os.environ['HF_HOME'] = "D:\\cahc_models_folder"  # Change this to your desired cache path
+  54  
+
+  67  # OLD MODEL PATH NOT IN USE---------------------------------------------
+  68: # os.environ['HF_HOME'] = "D:\\__MACOSX"  # Change this to your desired cache path
+  69  # OLD MODEL PATH NOT IN USE---------------------------------------------
+
+Code-notebooks\csv_to_video_generation.ipynb:
+  2: os.environ['HF_HOME'] = "D:\\cahc_models_folder"  # Change this to your desired cache path
+  2  # Set the HF_HOME environment variable to change the cache path
+  4  
+
+  51: #     audio_path = os.path.join('D:\\1OOx-enginners-hackathon-submission-2\\uploads\\audio_files', audio_filename)
+  51  #     audio_filename = f'summary_audio_{uuid.uuid4().hex}.mp3'
+  53  #     tts.save(audio_path)
+
+  206: #         'audio_path': 'D:\\1OOx-enginners-hackathon-submission-2\\uploads\\audio_files\\summary_audio.mp3',
+  206  #         'text': '20% of users own an iPhone, 50% own a Samsung, and the rest own a variety of brands',
+  208  #         'sentiment': 'neutral',
+
+Code-notebooks\CSV_to_Video_Model_Working.ipynb:
+  1: ⟪ 130351 characters skipped ⟫\n\ndef process_data_and_create_video(file_path):\n    # Create the infographic video\n    create_infographic_video(file_path)\n\n# # Example usage\n# if __name__ == \"__main__\":\n#     file_path = 'D:\\\\1OOx-enginners-hackathon-submission-2\\\\data\\\\2015.csv'\n#     process_data_and_create_video(file_path)","metadata":{"trusted":true,"execution":{"iopub.status.busy":"2024-12-28T20:25:30.338848Z","iopub.execute_input":"2024-12-28T20:25:30.339246Z","iopub.status.idle":"2024-12-28T20:25:30.344446Z","shell.execute_reply.started":"2024-12-28T20:25:30.339211Z","shell.execute_reply":"2024-12-28T20:25:30.343665Z"}},"outputs":[],"execution_count":32},{"cell_type":"code","source":"# Example usage\nif __name__ == \"__main__\":\n    file_path ='/kaggle/input/test-dataset/2015.csv'\n    process_data_and_create_video(file_path)","metadata":{"trusted":true,"execution":{"iopub.status.busy":"2024-12-28T20:25:30.637937Z","iopub.execute_input":"2024-12-28T20:25:30.638256Z","iopub.status.idle":"2024-12-28T20:28:19.933406Z","shell.execute_reply.started":"2024-12-28T20:25:30.638229Z","shell.execute_reply":"2024-12-28T20:28:19.932584Z"}},"outputs":[{"name":"stdout","text":"First image size: 2494x210
+
+Code-notebooks\Final_production_model_Genai_not_in_use_model.ipynb:
+   789      "    frames_needed = 4 * fps\n",
+   790:     "    while len(gif_frames) < frames_needed:\n",
+   791      "        gif_frames.extend(gif_frames)\n",
+
+  1865  =======
+  1866: ⟪ 54619 characters skipped ⟫d(frame_array)\n            gif.seek(len(gif_frames))\n    except EOFError:\n        pass\n\n    # Extend gif frames to 4 seconds\n    frames_needed = 4 * fps\n    while len(gif_frames) < frames_needed:\n        gif_frames.extend(gif_frames)\n    frames.extend(gif_frames[:frames_needed])\n\n    # 3. Explanation sequence (4 seconds)\n    explanations = [\n        \"Analyzing market share data...\",\n        f\"Main competitor: {categories[values.index(max(values))]} leads with {max(values)}%\",\n        f\"Market gap analysis shows {max(values)-min(values)}% difference\",\n        f\"Total market coverage: {sum(values)}%\",\n        \"Generating insights and recommendations...\"\n    ]\n\n    frames_per_explanation = int((4 * fps) / len(explanations))\n    for exp in explanations:\n        exp_frame = create_text_frame(exp)\n        for _ in range(frames_per_explanation):\n            frames.append(exp_frame)\n\n    # Verify all frames have same shape and channels\n    frame_shape = frames[0].shape\n    frames = [frame.reshape(frame_shape) if frame.shape != frame_shape else frame\n             for frame in frames]\n\n    # Save as MP4\n    output_path = 'data_storytelling_video.mp4'
+  1867  >>>>>>> main
+  1868  =======
+  1869: ⟪ 54619 characters skipped ⟫d(frame_array)\n            gif.seek(len(gif_frames))\n    except EOFError:\n        pass\n\n    # Extend gif frames to 4 seconds\n    frames_needed = 4 * fps\n    while len(gif_frames) < frames_needed:\n        gif_frames.extend(gif_frames)\n    frames.extend(gif_frames[:frames_needed])\n\n    # 3. Explanation sequence (4 seconds)\n    explanations = [\n        \"Analyzing market share data...\",\n        f\"Main competitor: {categories[values.index(max(values))]} leads with {max(values)}%\",\n        f\"Market gap analysis shows {max(values)-min(values)}% difference\",\n        f\"Total market coverage: {sum(values)}%\",\n        \"Generating insights and recommendations...\"\n    ]\n\n    frames_per_explanation = int((4 * fps) / len(explanations))\n    for exp in explanations:\n        exp_frame = create_text_frame(exp)\n        for _ in range(frames_per_explanation):\n            frames.append(exp_frame)\n\n    # Verify all frames have same shape and channels\n    frame_shape = frames[0].shape\n    frames = [frame.reshape(frame_shape) if frame.shape != frame_shape else frame\n             for frame in frames]\n\n    # Save as MP4\n    output_path = 'data_storytelling_video.mp4'
+  1870  >>>>>>> main
+
+Code-notebooks\Final_production_model_Genai_second.ipynb:
+  1: ⟪ 63932 characters skipped ⟫          gif.seek(len(gif_frames))\n","    except EOFError:\n","        pass\n","\n","    # Extend gif frames to 4 seconds\n","    frames_needed = 4 * fps\n","    while len(gif_frames) < frames_needed:\n","        gif_frames.extend(gif_frames)\n","    frames.extend(gif_frames[:frames_needed])\n","\n","    # 3. Explanation sequence (4 seconds)\n","    explanations = [\n","        \"Analyzing market share data...\",\n","        f\"Main competitor: {categories[values.index(max(values))]} leads with {max(values)}%\",\n","        f\"Market gap analysis shows {max(values)-min(values)}% difference\",\n","        f\"Total market coverage: {sum(values)}%\",\n","        \"Generating insights and recommendations...\"\n","    ]\n","\n","    frames_per_explanation = int((4 * fps) / len(explanations))\n","    for exp in explanations:\n","        exp_frame = create_text_frame(exp)\n","        for _ in range(frames_per_explanation):\n","            frames.append(exp_frame)\n","\n","    # Verify all frames have same shape and channels\n","    frame_shape = frames[0].shape\n","    frames = [frame.reshape(frame_shape) if frame.shape != frame_shape else frame\n","             for frame in frames]\n",
+
+Code-notebooks\Final_production_model_Genai.ipynb:
+  1: ⟪ 63963 characters skipped ⟫          gif.seek(len(gif_frames))\n","    except EOFError:\n","        pass\n","\n","    # Extend gif frames to 4 seconds\n","    frames_needed = 4 * fps\n","    while len(gif_frames) < frames_needed:\n","        gif_frames.extend(gif_frames)\n","    frames.extend(gif_frames[:frames_needed])\n","\n","    # 3. Explanation sequence (4 seconds)\n","    explanations = [\n","        \"Analyzing market share data...\",\n","        f\"Main competitor: {categories[values.index(max(values))]} leads with {max(values)}%\",\n","        f\"Market gap analysis shows {max(values)-min(values)}% difference\",\n","        f\"Total market coverage: {sum(values)}%\",\n","        \"Generating insights and recommendations...\"\n","    ]\n","\n","    frames_per_explanation = int((4 * fps) / len(explanations))\n","    for exp in explanations:\n","        exp_frame = create_text_frame(exp)\n","        for _ in range(frames_per_explanation):\n","            frames.append(exp_frame)\n","\n","    # Verify all frames have same shape and channels\n","    frame_shape = frames[0].shape\n","    frames = [frame.reshape(frame_shape) if frame.shape != frame_shape else frame\n","             for frame in frames]\n",
+
+Code-notebooks\genai_text_to_video.ipynb:
+  1844      "\n",
+  1845:     "#     if urls_not_found:\n",
+  1846      "#         print(f\"URLs not found: {urls_not_found}\")\n",
+  1847:     "#     if null_values_found:\n",
+  1848      "#         print(f\"URLs with null values found: {null_values_found}\")\n",
+
+Code-notebooks\second_text_to_video_new_approach_genai.ipynb:
+  1000      "    frames_needed = 4 * fps\n",
+  1001:     "    while len(gif_frames) < frames_needed:\n",
+  1002      "        gif_frames.extend(gif_frames)\n",
+
+Code-notebooks\text_to_video_new_approach_genai.ipynb:
+  1: ⟪ 63846 characters skipped ⟫      gif.seek(len(gif_frames))\n","    except EOFError:\n","        pass\n","    \n","    # Extend gif frames to 4 seconds\n","    frames_needed = 4 * fps\n","    while len(gif_frames) < frames_needed:\n","        gif_frames.extend(gif_frames)\n","    frames.extend(gif_frames[:frames_needed])\n","    \n","    # 3. Explanation sequence (4 seconds)\n","    explanations = [\n","        \"Analyzing market share data...\",\n","        f\"Main competitor: {categories[values.index(max(values))]} leads with {max(values)}%\",\n","        f\"Market gap analysis shows {max(values)-min(values)}% difference\",\n","        f\"Total market coverage: {sum(values)}%\",\n","        \"Generating insights and recommendations...\"\n","    ]\n","    \n","    frames_per_explanation = int((4 * fps) / len(explanations))\n","    for exp in explanations:\n","        exp_frame = create_text_frame(exp)\n","        for _ in range(frames_per_explanation):\n","            frames.append(exp_frame)\n","    \n","    # Verify all frames have same shape and channels\n","    frame_shape = frames[0].shape\n","    frames = [frame.reshape(frame_shape) if frame.shape != frame_shape else frame \n","             for frame i
+
+Code-notebooks\text_to_video_new_code_aaded.ipynb:
+   6352              "\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: 'unset'",
+   6353:             "\nDuring handling of the above exception, another exception occurred:\n",
+   6354              "\u001b[0;31mOSError\u001b[0m                                   Traceback (most recent call last)",
+
+   6420              "\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: 'unset'",
+   6421:             "\nDuring handling of the above exception, another exception occurred:\n",
+   6422              "\u001b[0;31mOSError\u001b[0m                                   Traceback (most recent call last)",
+
+   8373          "    frames_needed = 4 * fps\n",
+   8374:         "    while len(gif_frames) < frames_needed:\n",
+   8375          "        gif_frames.extend(gif_frames)\n",
+
+   8856          "    frames_needed = 4 * fps\n",
+   8857:         "    while len(gif_frames) < frames_needed:\n",
+   8858          "        gif_frames.extend(gif_frames)\n",
+
+   9349          "    frames_needed = 4 * fps\n",
+   9350:         "    while len(gif_frames) < frames_needed:\n",
+   9351          "        gif_frames.extend(gif_frames)\n",
+
+   9859          "    frames_needed = 4 * fps\n",
+   9860:         "    while len(gif_frames) < frames_needed:\n",
+   9861          "        gif_frames.extend(gif_frames)\n",
+
+  10375          "    frames_needed = 4 * fps\n",
+  10376:         "    while len(gif_frames) < frames_needed:\n",
+  10377          "        gif_frames.extend(gif_frames)\n",
+
+  10832          "    frames_needed = 4 * fps\n",
+  10833:         "    while len(gif_frames) < frames_needed:\n",
+  10834          "        gif_frames.extend(gif_frames)\n",
+
+  11227          "    frames_needed = 4 * fps\n",
+  11228:         "    while len(gif_frames) < frames_needed:\n",
+  11229          "        gif_frames.extend(gif_frames)\n",
+
+  11629          "    frames_needed = 4 * fps\n",
+  11630:         "    while len(gif_frames) < frames_needed:\n",
+  11631          "        gif_frames.extend(gif_frames)\n",
+
+  12058          "    frames_needed = 4 * fps\n",
+  12059:         "    while len(gif_frames) < frames_needed:\n",
+  12060          "        gif_frames.extend(gif_frames)\n",
+
+static\js\script.js:
+  30          console.log("Custom Inputs:", customInputs);
+  31:         alert("Custom inputs saved:\n" + customInputs.join("\n"));
+  32          // You can store these inputs or send them to a server for processing
+
+templates\index1.html:
+  477                  console.log("Custom Inputs:", customInputs);
+  478:                 alert("Custom inputs saved:\n" + customInputs.join("\n"));
+  479                  // Here you can send the customInputs to the server for processing

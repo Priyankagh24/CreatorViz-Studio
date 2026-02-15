@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# AI / models
+cache_models/
+hf_cache/
+models/
+
+# Generated content
+uploads/
+media/
+outputs/
+final video outputs/
+resized images/
+generated_images/
+frames/
+downloads/
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+Code-notebooks/
