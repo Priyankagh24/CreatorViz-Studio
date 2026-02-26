@@ -102,19 +102,7 @@
 
 ---
 
-## 🎯 **Problem Statement - 100X Engineers GenAI Buildathon**
-
-<div align="center">
-
-![100X Engineers](https://img.shields.io/badge/100X%20Engineers-GenAI%20Buildathon-purple?style=for-the-badge&logo=rocket&logoColor=white)
-
-</div>
-
-### **The Challenge by (AEOS Labs)** 🎯
-
-**Automated Data Visualization & Video Generation System**
-
-The hackathon presented a critical challenge in the content creation industry:
+## 🎯 **Problem Statement
 
 #### **Current Challenges:**
 - **🔧 Dependency on specialized skill sets** - Creating animated infographics requires expertise in design, animation, and data visualization
@@ -161,22 +149,10 @@ The solution should be able to:
 ---
 ---
 
-## 🏆 **Our Solution - DataViz AI MVP**
-
-### **📹 Demo Videos Showcase:**
-
-<div align="center">
-
-**Click below image to see MVP in action:**
-
-[![Demo Video](./assets-of-app/image.png)](https://www.youtube.com/watch?v=G9khu1KDEic)
-
-</div>
+## 🏆 **Our Solution - DataViz AI**
 
 
 <div align="center">
-
-![MVP Solution](https://img.shields.io/badge/MVP%20Solution-Complete-brightgreen?style=for-the-badge&logo=check-circle&logoColor=white)
 
 **We've successfully built a comprehensive solution that addresses every requirement of the problem statement!**
 
@@ -196,22 +172,11 @@ The solution should be able to:
 | **Story Lab** | 30s | Text-to-Video, AI Narration | [▶️ Watch](coming soon....) |
 | **Pro Studio** | 60s | Multi-Model, Enterprise Features | [▶️ Watch](coming soon....) |
 | **Data Magic** | 45s | CSV Processing, Advanced Viz | [▶️ Watch](coming soon....) |
-| **Full Platform** | 9:28 min | Complete Walkthrough | [▶️ Watch](https://youtu.be/G9khu1KDEic?si=bQ3AnRLcUd3Pv-c8) |
+
 
 </div>
 
-<!-- ### **🎬 Live Demo Access** -->
 
-
-<!-- YouTube Demo Video Embed (GitHub-compatible) -->
-
-
-<!-- 
-  Note: GitHub's markdown renderer does NOT support <iframe> tags, so the video will not be visible directly on GitHub.com.
-  If you want a clickable image that links to the YouTube video (which works on GitHub), use this instead:
-
-  [![Demo Video](https://img.youtube.com/vi/G9khu1KDEic/0.jpg)](https://www.youtube.com/watch?v=G9khu1KDEic)
--->
 
 
 **🔗 Demo Links:**
@@ -220,7 +185,7 @@ The solution should be able to:
 
 </div>
 
-## 🎯 **MVP Showcase - Hackathon Solution**
+## 🎯 **MVP Showcase**
 
 <div align="center">
 
@@ -671,46 +636,6 @@ python app.py
 Open your browser and navigate to: `http://localhost:2000`
 
 
-## 📚 **Code Notebooks & Development Journey**
-
-<div align="center">
-
-![Code Notebooks](https://img.shields.io/badge/Code%20Notebooks-Development%20Journey-purple?style=for-the-badge&logo=jupyter&logoColor=white)
-![Model Development](https://img.shields.io/badge/Model%20Development-Transparent-blue?style=for-the-badge&logo=code&logoColor=white)
-
-**Explore the complete development journey and model implementation!** 🔬
-
-</div>
-
-### **🧠 Model Development Notebooks**
-
-<div align="center">
-
-| **Notebook** | **Description** | **Size** | **Lines** | **Purpose** | **View** |
-|--------------|-----------------|----------|-----------|-------------|----------|
-| **Final Production Model** | Main production-ready model | 167KB | 2 | Core production implementation | [📖 View](Code-notebooks/Final_production_model_Genai.ipynb) |
-| **Final Production Model (Second)** | Alternative production model | 214KB | 2 | Secondary production approach | [📖 View](Code-notebooks/Final_production_model_Genai_second.ipynb) |
-| **Multi-Model Production Code** | Multi-model implementation | 219KB | 4,956 | Advanced multi-model processing | [📖 View](Code-notebooks/multimodel_notebok_production_code.ipynb) |
-| **Custom Prompt Notebook** | Custom prompt engineering | 96KB | 2,060 | Prompt optimization techniques | [📖 View](Code-notebooks/custom_notebook_prompt.ipynb) |
-| **CSV to Video Model** | CSV processing implementation | 133KB | 2 | CSV data processing pipeline | [📖 View](Code-notebooks/CSV_to_Video_Model_Working.ipynb) |
-| **CSV to Video Generation** | Video generation from CSV | 63KB | 1,615 | Video creation workflow | [📖 View](Code-notebooks/csv_to_video_generation.ipynb) |
-
-</div>
-
-### **🔬 Research & Development Notebooks**
-
-<div align="center">
-
-| **Notebook** | **Description** | **Size** | **Lines** | **Purpose** | **View** |
-|--------------|-----------------|----------|-----------|-------------|----------|
-| **Second Model Custom Input** | Custom input processing | 2.2MB | - | Advanced input handling | [📖 View](Code-notebooks/second-model-custom-input-model.ipynb) |
-| **Text to Video New Code** | Enhanced text processing | 1.1MB | - | Improved text-to-video pipeline | [📖 View](Code-notebooks/text_to_video_new_code_aaded.ipynb) |
-| **Text to Video New Approach** | Alternative text approach | 70KB | 2 | Novel text processing methods | [📖 View](Code-notebooks/text_to_video_new_approach_genai.ipynb) |
-| **Second Text to Video Approach** | Secondary text approach | 75KB | 1,222 | Backup text processing | [📖 View](Code-notebooks/second_text_to_video_new_approach_genai.ipynb) |
-| **GenAI Text to Video** | GenAI integration | 97KB | 2,303 | Generative AI implementation | [📖 View](Code-notebooks/genai_text_to_video.ipynb) |
-| **Final Production (Not in Use)** | Legacy production model | 600KB | 1,871 | Historical implementation | [📖 View](Code-notebooks/Final_production_model_Genai_not_in_use_model.ipynb) |
-
-</div>
 
 ### **🎯 Development Journey Overview**
 
