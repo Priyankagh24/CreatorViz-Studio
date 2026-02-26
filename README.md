@@ -102,7 +102,7 @@
 
 ---
 
-## 🎯 **Problem Statement
+## 🎯 **Problem Statement**
 
 #### **Current Challenges:**
 - **🔧 Dependency on specialized skill sets** - Creating animated infographics requires expertise in design, animation, and data visualization
@@ -158,8 +158,8 @@ The solution should be able to:
 
 </div>
 
----
----
+
+
 
 
 
